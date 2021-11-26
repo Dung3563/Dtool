@@ -116,24 +116,24 @@ def tool_like_function():
       while True:
             t=datetime.datetime.now().strftime("%X")
             dem=dem+1
-            getlike=requests.get('https://traodoisub.com/api/?fields=like&access_token='+tokentds)
-            idlike=getlike.json()[0]['id']
-            urllike='https://graph.facebook.com/'+str(idlike)+'/likes'
+            getfolow=requests.get('https://traodoisub.com/api/?fields=like&access_token='+tokentds)
+            idfolow=getfolow.json()[0]['id']
+            urllike='https://graph.facebook.com/'+str(idfolow)+'/likes'
             datalike="access_token="+tokenfb
             like=requests.post(urllike, data=datalike)
-            nhan=json.loads(requests.get('https://traodoisub.com/api/coin/?type=LIKE&id='+str(idlike)+'&access_token='+tokentds).text)
-            id=idlike[0:15]
+            nhan=json.loads(requests.get('ttps://traodoisub.com/api/coin/?type=LIKE&id='+str(idfolow)+'&access_token='+tokentds).text)
+            id=idfolow[0:15]
             if "success" in nhan:
-                write(f'\x1b[1;93m ==>[{dem}] >\x1b[1;92m {t} >\x1b[1;96m Like >\x1b[1;95m {id} >\x1b[1;93m +300 >\x1b[1;94m'+str(nhan['data']['xu'])+" Xu")
+                write(f'\x1b[1;93m ==>[{dem}] >\x1b[1;92m {t} >\x1b[1;96m LIKE >\x1b[1;95m {id} >\x1b[1;93m +300 >\x1b[1;94m'+str(nhan['data']['xu'])+" Xu")
                 for demtg in range(dl, -1, -1):
-                    print(xb+'Đang chạy, xin đợi:   '+str(demtg)+'   ',end='\r')
+                    print(xb+'Processing, Please Wait >   '+str(demtg)+'   ',end='\r')
                     time.sleep(1)
             else:
-                print('Lỗi'+id,end='\r')
+                print('ERROR'+id,end='\r')
     elif job == 'n' or job == 'N':
         os.sys.exit()
     else:
-        print(d+'[!] Lỗi!! ')
+        print(d+'[!] Wrong')
 def tool_follow_function():
     os.system('clear')
     print(banner) 
