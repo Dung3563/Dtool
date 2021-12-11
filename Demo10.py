@@ -12,7 +12,7 @@ stop=1
 os.system("clear")
 rf_acc='https://traodoisub.com/view/cauhinh'
 sr="\033[1;31m [\033[1;92m●\033[1;31m]\033[1;97m \033[1;92m"
-f = """------------------------------------------------------------"""
+dung = """------------------------------------------------------------"""
 logo = """
 \033[1;32m╔═════════════════════════════════════════════════════════╗
 \033[1;32m\033[1;96m\033[1;91m  \033[1;95m  [√]Facebook : Dũng Dũng    \033[1;32m   
@@ -211,7 +211,7 @@ if ls==1:
                dem=dem+1
                t=datetime.now().strftime("%H:%M:%S")
                check_tk=requests.get(url='https://traodoisub.com/scr/user.php', headers=head
-               print(f) 
+               write(dung) 
                write(f"\033[1;93m[\033[1;93m{dem}\033[1;93m]\033[1;91|\033[1;96m{t}\033[1;91m • \033[1;92mLIKE\033[1;91m •\033[1;96m {id_like} \033[1;91m •\033[1;92m+300\033[1;91m • \033[1;93m{int(check_tk.json()['xu'])}\033[1;91m •")
                if dem==stop*nvdl:
                                     stop+=1
