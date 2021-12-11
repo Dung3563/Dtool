@@ -12,6 +12,7 @@ stop=1
 os.system("clear")
 rf_acc='https://traodoisub.com/view/cauhinh'
 sr="\033[1;31m [\033[1;92m●\033[1;31m]\033[1;97m \033[1;92m"
+f = """------------------------------------------------------------"""
 logo = """
 \033[1;32m╔═════════════════════════════════════════════════════════╗
 \033[1;32m\033[1;96m\033[1;91m  \033[1;95m  [√]Facebook : Dũng Dũng    \033[1;32m   
@@ -21,6 +22,11 @@ logo = """
 \033[1;32m \033[1;96m\033[1;91m\033[1;97m   [√]Support: Axeyed Kha  \033[1;32m   
 \033[1;32m╚═════════════════════════════════════════════════════════"""
 vs='================⟩⟩⟩⟩⟩⟩⟩ Vesion 1.0 ⟨⟨⟨⟨⟨⟨================='
+def write(z):
+  for e in z + '\n':
+    sys.stdout.write(e) 
+    sys.stdout.flush()
+    time.sleep(0.01)
 print(logo)
 os.system("clear")
 print(logo)
@@ -204,8 +210,9 @@ if ls==1:
              if nhan=='2':
                dem=dem+1
                t=datetime.now().strftime("%H:%M:%S")
-               check_tk=requests.get(url='https://traodoisub.com/scr/user.php', headers=head)
-               print(f"\033[1;93m[\033[1;93m{dem}\033[1;93m]\033[1;91|\033[1;96m{t}\033[1;91m • \033[1;92mLIKE\033[1;97m •\033[1;96m {id_like} \033[1;97m •\033[1;92m+300\033[1;91m • \033[1;93m{int(check_tk.json()['xu'])}\033[1;91m •")
+               check_tk=requests.get(url='https://traodoisub.com/scr/user.php', headers=head
+               print(f) 
+               write(f"\033[1;93m[\033[1;93m{dem}\033[1;93m]\033[1;91|\033[1;96m{t}\033[1;91m • \033[1;92mLIKE\033[1;91m •\033[1;96m {id_like} \033[1;91m •\033[1;92m+300\033[1;91m • \033[1;93m{int(check_tk.json()['xu'])}\033[1;91m •")
                if dem==stop*nvdl:
                                     stop+=1
                                     for demtg in range(dlnv, -1,-1):
