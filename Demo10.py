@@ -11,16 +11,16 @@ dem=0
 stop=1
 os.system("clear")
 rf_acc='https://traodoisub.com/view/cauhinh'
-sr="\033[1;31m [\033[1;92m●\033[1;31m]\033[1;97m ➺❥ \033[1;92m"
+sr="\033[1;31m [\033[1;92m●\033[1;31m]\033[1;97m [•] \033[1;92m"
 logo = """
 \033[1;32m╔═════════════════════════════════════════════════════════╗
-\033[1;32m \033[1;96m  \033[1;91m   \033[1;95m ➽ Facebook : Nguyễn  Công  Thành        \033[1;32m   
-\033[1;32m \033[1;96m \033[1;91m\033[1;94m  ➽ Zalo : 0********          \033[1;32m      
-\033[1;32m \033[1;96m\033[1;91m\033[0;33m  ➽ Momo : ********        \033[1;32m       
-\033[1;32m \033[1;96m\033[1;91m   \033[1;92m➽ Youtube : TH MUSIC           \033[1;32m    
-\033[1;32m \033[1;96m  \033[1;91m\033[1;97m  ➽ Bản Quyền By TH MUSIC✨   \033[1;32m   
+\033[1;32m \033[1;96m  \033[1;91m   \033[1;95m[√]Facebook : Dũng Dũng     \033[1;32m   
+\033[1;32m \033[1;96m \033[1;91m\033[1;94m[√]Zalo : 0936485851          \033[1;32m      
+\033[1;32m \033[1;96m\033[1;91m\033[0;33m[√]Tsr : 0936485851        \033[1;32m       
+\033[1;32m \033[1;96m\033[1;91m   \033[1;92m[√]Tool tđs python token v1.0          \033[1;32m    
+\033[1;32m \033[1;96m  \033[1;91m\033[1;97m[√]Support: Axeyed Kha  \033[1;32m   
 \033[1;32m╚═════════════════════════════════════════════════════════"""
-vs='================⟩⟩⟩⟩⟩⟩⟩ Vesion 1.8 ⟨⟨⟨⟨⟨⟨================='
+vs='================⟩⟩⟩⟩⟩⟩⟩ Vesion 1.0 ⟨⟨⟨⟨⟨⟨================='
 print(logo)
 os.system("clear")
 print(logo)
@@ -235,7 +235,7 @@ if ls==1:
               sleep(2)
     except:
             for a in range(5, -1, -1):
-                print(sr+'Có Thể Là Do Hết nv ,Đơi ',a,end='\r')
+                print(sr+'Có Thể Là Do Hết nv ,Đợi ',a,end='\r')
                 sleep(1)
 elif ls==2:
  while True:
@@ -312,7 +312,7 @@ elif ls==2:
               sleep(2)
     except:
            for a in range(5, -1, -1):
-             print(sr+'Có Thể Là Do Hết nv ,Đơi ',a,end='\r')
+             print(sr+'Có Thể Là Do Hết nv ,Đợi ',a,end='\r')
              sleep(1)
 elif ls==3:
  print('Bảo Trì ')
@@ -391,7 +391,7 @@ if ls==4:
               sleep(2)
     except:
      for a in range(5, -1, -1):
-            print(sr+'Hết nv ,Đơi ',a,end='\r')
+            print(sr+'Hết nv ,Đợi ',a,end='\r')
             sleep(1)
 elif ls==5:
  while True:
@@ -447,7 +447,7 @@ elif ls==5:
               sleep(2)
           except:
            for a in range(5, -1, -1):
-            print(sr+'Hết nv ,Đơi ',a,end='\r')
+            print(sr+'Hết nv ,Đợi ',a,end='\r')
             sleep(1)
   elif cc==2:
     head_job={
@@ -500,7 +500,7 @@ elif ls==5:
               sleep(2)
     except:
            for a in range(5, -1, -1):
-             print(sr+'Có Thể Là Do Hết nv ,Đơi ',a,end='\r')
+             print(sr+'Có Thể Là Do Hết nv ,Đợi ',a,end='\r')
              sleep(1)
   if dem==stop*nvdl:
                                     stop+=1
@@ -579,7 +579,7 @@ elif ls==6:
               sleep(2)
           except:
            for a in range(5, -1, -1):
-            print(sr+'Hết nv ,Đơi ',a,end='\r')
+            print(sr+'Hết nv ,Đợi ',a,end='\r')
             sleep(1)
   elif cc==2:
        head_job={
@@ -632,7 +632,7 @@ elif ls==6:
               sleep(2)
        except:
            for a in range(5, -1, -1):
-             print(sr+'Có Thể Là Do Hết nv ,Đơi ',a,end='\r')
+             print(sr+'Có Thể Là Do Hết nv ,Đợi ',a,end='\r')
              sleep(1)
        if dem==stop*nvdl:
                                     stop+=1
@@ -705,7 +705,7 @@ elif ls==6:
                print(f"\033[1;97m[\033[1;92m{dem}\033[1;97m] [\033[1;92m{t}\033[1;97m] [\033[1;92mSHARE\033[1;97m]\033[1;92m {idshare} \033[1;97m[\033[1;92m+600\033[1;97m] \033[1;97m[\033[1;92m{int(check_tk.json()['xu'])}\033[1;97m]")
     except:
            for a in range(5, -1, -1):
-            print(sr+'Hết nv ,Đơi ',a,end='\r')
+            print(sr+'Hết nv ,Đợi ',a,end='\r')
             sleep(1)
   if dem==stop*nvdl:
                                     stop+=1
@@ -784,7 +784,7 @@ elif ls==7:
               sleep(2)
           except:
            for a in range(5, -1, -1):
-            print(sr+'Hết nv ,Đơi ',a,end='\r')
+            print(sr+'Hết nv ,Đợi ',a,end='\r')
             sleep(1)
   if cc==2:
     head_job={
@@ -834,7 +834,7 @@ elif ls==7:
                print(f"\033[1;97m[\033[1;92m{dem}\033[1;97m] [\033[1;92m{t}\033[1;97m] [\033[1;92mSHARE\033[1;97m]\033[1;92m {idshare} \033[1;97m[\033[1;92m+600\033[1;97m] \033[1;97m[\033[1;92m{int(check_tk.json()['xu'])}\033[1;97m]")
     except:
            for a in range(5, -1, -1):
-            print(sr+'Hết nv ,Đơi ',a,end='\r')
+            print(sr+'Hết nv ,Đợi ',a,end='\r')
             sleep(1)
   if dem==stop*nvdl:
                                     stop+=1
