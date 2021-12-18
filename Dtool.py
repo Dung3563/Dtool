@@ -156,9 +156,6 @@ print(f"{sr}\033[1;92m Nhập [1] Chạy Nhiệm Vụ Like")
 print(f"{sr}\033[1;92m Nhập [2] Chạy Nhiệm Vụ Follow")
 print(f"{sr}\033[1;92m Nhập [3] Chạy Nhiệm Vụ Comments ( Đang Bảo Trì )")
 print(f"{sr}\033[1;92m Nhập [4] Chạy Nhiệm Vụ Share")
-print(f"{sr}\033[1;92m Nhập [5] Chạy Nhiệm Vụ Like + Follow")
-print(f"{sr}\033[1;92m Nhập [6] Chạy Nhiệm Vụ Like + Follow + Share")
-print(f"{sr}\033[1;92m Nhập [7] Chạy Nhiệm Vụ Like + Share")
 print("-"*60)
 ls=int(input(f"{sr} Nhập Số : "))
 delay=int(input(f"{sr} Nhập Delay Job : "))
@@ -210,6 +207,7 @@ if ls==1:
                dem=dem+1
                t=datetime.now().strftime("%H:%M:%S")
                check_tk=requests.get(url='https://traodoisub.com/scr/user.php', headers=head)
+               print("-"*60)
                print(f"\033[1;93m[\033[1;93m{dem}\033[1;93m]\033[1;91|\033[1;96m{t}\033[1;91m • \033[1;92mLIKE\033[1;91m •\033[1;96m {id_like} \033[1;91m •\033[1;92m+300\033[1;91m • \033[1;93m{int(check_tk.json()['xu'])}\033[1;91m •")
                if dem==stop*nvdl:
                                     stop+=1
@@ -288,6 +286,7 @@ elif ls==2:
                dem=dem+1
                t=datetime.now().strftime("%H:%M:%S")
                check_tk=requests.get(url='https://traodoisub.com/scr/user.php', headers=head)
+               print("-"*60)
                print(f"\033[1;93m[\033[1;93m{dem}\033[1;93m]\033[1;91|\033[1;96m{t}\033[1;91m • \033[1;92mFOLLOW\033[1;91m •\033[1;96m {id_follow} \033[1;91m •\033[1;92m+600\033[1;91m • \033[1;93m{int(check_tk.json()['xu'])}\033[1;91m •")
                if dem==stop*nvdl:
                                     stop+=1
@@ -365,6 +364,7 @@ if ls==4:
                dem=dem+1
                t=datetime.now().strftime("%H:%M:%S")
                check_tk=requests.get(url='https://traodoisub.com/scr/user.php', headers=head)
+               print("-"*60)
                print(f"\033[1;93m[\033[1;93m{dem}\033[1;93m]\033[1;91|\033[1;96m{t}\033[1;91m • \033[1;92mSHARE\033[1;91m •\033[1;96m {id_share} \033[1;91m •\033[1;92m+600\033[1;91m • \033[1;93m{int(check_tk.json()['xu'])}\033[1;91m •")
                if dem==stop*nvdl:
                                     stop+=1
